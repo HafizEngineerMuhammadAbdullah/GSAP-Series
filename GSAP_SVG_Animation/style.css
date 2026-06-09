@@ -1,0 +1,19 @@
+/* Reset Default Space */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #111;
+}
+div#string {
+     /* width: min(220px,25vw);
+    aspect-ratio: 1; */
+    height: 200px;
+    width: 100%;
+    /* background-color: aqua;  */
+}
+svg {
+  /* background-color: blue; */
+}

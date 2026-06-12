@@ -21,7 +21,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 50px;
+  padding: 60px 80px;
 }
 
 .part2 {
@@ -29,11 +29,17 @@ nav {
   justify-content: center;
   align-items: center;
   /* column-gap: 50px; */
-  gap: 50px;
+  gap: 80px;
 }
 
 nav h1 {
   font-size: 50px;
+}
+
+nav h1 i{
+  display: inline-block;
+  rotate: 45deg;
+  font-size: 55px;
 }
 
 nav h4 {
@@ -42,9 +48,10 @@ nav h4 {
 }
 
 nav button {
-  padding: 15px 25px;
+  background-color: transparent;
+  padding: 22px 40px;
   font-size: 25px;
   font-weight: 600;
-  border: 1px solid #000;
-  border-radius: 5px;
+  border: 2px solid #000;
+  border-radius: 10px;
 }

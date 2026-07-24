@@ -67,14 +67,14 @@ main {
 main {
   width: 100vw;
   /* Add top padding equal to header height so content isn't covered */
-  padding-top: 15vh; 
+  padding-top: 15vh;
 }
 
 /* Hero Section (.fanta) */
 div.fanta {
   width: 100%;
   /* Occupies remaining viewport height below 15vh header */
-  height: calc(100vh - 15vh); 
+  height: calc(100vh - 15vh);
   position: relative; /* Keeps absolute images positioned relative to .fanta */
   display: flex;
   justify-content: center;
@@ -84,11 +84,10 @@ div.fanta {
 div.fanta h1 {
   font-size: 25vw;
   font-family: monospace;
-  background: linear-gradient(to right, #69cf09, #fc9107, #f79311);
+  background: linear-gradient(to right, #69cf09, #10ee86, #beca10);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-
 }
 
 .fanta > #fanta-img {
@@ -138,75 +137,67 @@ div.fanta h1 {
   right: 0%;
 }
 
-/* Stories Section (Scrolls into view) */
-div.stories {
+/* Stories & Blob Section (Scrolls into view) */
+div.blob-stories {
   height: 100vh;
   width: 100%;
-  background-color: #41ca17;
+  display: flex;
+  background-color: rgb(54, 248, 119);
 }
-/* 
-div.fanta {
-  width: 100%;
+
+div.left-side {
+  width: 50%;
   height: 100%;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-div.fanta h1 {
-  font-size: 25vw;
+div.right-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.left-side > svg {
+  transform: rotateX(45deg);
+}
+
+div.right-side h1 {
+  font-size: 60px;
   font-family: monospace;
-  color: #111;
+  color: #e77c25;
 }
 
-.fanta > #fanta-img {
-  position: absolute;
-  top: 25%;
-  width: 40%;
-  z-index: 2;
+div.right-side p {
+  width: 85%;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #723605;
 }
 
-#half-orange {
-  position: absolute;
-  left: 32%;
-  top: 10%;
-  width: 15%;
-  z-index: 1;
-}
-
-#orange {
-  position: absolute;
-  bottom: 1.5%;
-  right: 32%;
-  width: 20%;
-  z-index: 2;
-}
-
-#leaf {
-  position: absolute;
-  width: 20%;
-  top: 10%;
-  left: 5%;
-  transform: rotate(60deg);
-}
-
-#leaf2 {
-  position: absolute;
-  width: 10%;
-  top: 50%;
-  left: 60%;
-  transform: rotate(90deg);
-}
-
-#coconut-leaf {
-  position: absolute;
-  width: 20%;
-  top: 0%;
-  right: 0%;
-}
-
-div.stories {
+div.cards-section {
   height: 100vh;
   width: 100%;
-  background-color: #41ca17;
-} */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  background: linear-gradient(
+    150deg,
+    rgb(255, 115, 0),
+    rgb(255, 153, 0),
+    rgb(255, 115, 0)
+  );
+}
+
+div.cards-section div.card{
+  height: 70vh;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 50px;
+}

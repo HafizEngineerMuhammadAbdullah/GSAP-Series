@@ -181,6 +181,7 @@ div.right-side p {
 }
 
 div.cards-section {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -195,9 +196,50 @@ div.cards-section {
   );
 }
 
-div.cards-section div.card{
+div.cards-section div.card {
+  /* position: relative; */
   height: 70vh;
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   background-color: #fff;
+  border-radius: 30px;
+}
+
+.card h1 {
+  font-size: 3vw;
+  margin-bottom: 20px;
+}
+
+.card button {
+  color: #fff;
+  padding: 1vw 2vw;
+  font-size: 1.5vw;
+  border: none;
   border-radius: 50px;
+  background-color: orange;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+
+.lemon {
+  position: absolute;
+  width: 25vw;
+  top: 5px;
+}
+
+
+#sprite {
+  position: absolute;
+  top: -10px;
+  width: 40%;
+}
+
+#pepsi {
+  position: absolute;
+  top: 10;
+  width: 22%;
 }

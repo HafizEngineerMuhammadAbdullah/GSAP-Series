@@ -96,6 +96,7 @@ div.fanta h1 {
   left: 27%;
   width: 40%;
   z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5;
 }
 
 #half-orange {
@@ -104,6 +105,7 @@ div.fanta h1 {
   top: 1%;
   width: 15%;
   z-index: 1;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5;
 }
 
 #orange {
@@ -112,6 +114,7 @@ div.fanta h1 {
   right: 30%;
   width: 20%;
   z-index: 2;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5;
 }
 
 #leaf {
@@ -120,6 +123,7 @@ div.fanta h1 {
   top: 7%;
   left: 2%;
   transform: rotate(60deg);
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5;
 }
 
 #leaf2 {
@@ -128,6 +132,7 @@ div.fanta h1 {
   top: 50%;
   left: 65%;
   transform: rotate(90deg);
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5;
 }
 
 #coconut-leaf {

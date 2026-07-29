@@ -43,12 +43,22 @@ let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".cards-section",
         start: "0% 95%",//one is fix and another one is depend upon screen/target element
-        end: "50% 50%",
+        end: "70% 50%",
         scrub: true,
         markers: true
     }
 })
 
 tl2.from('.lemon', {
-    
+    rotate: -90,
+    left: "-50%",
+    top: "110%"
+
+})
+
+
+tl2.to('#fanta-img', {
+    width: "30%",
+    top: "240%",
+    left: "38%"
 })

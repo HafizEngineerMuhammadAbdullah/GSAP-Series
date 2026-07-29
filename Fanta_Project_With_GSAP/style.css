@@ -234,6 +234,8 @@ div.cards-section div.card {
   position: absolute;
   width: 25vw;
   top: 5px;
+  /* left: 12%; */
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 
